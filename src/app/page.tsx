@@ -4,6 +4,7 @@ import FeatureSearch from "@/components/fsearch";
 import FeatureConversion from "@/components/fconvert";
 import FeatureMetadata from "@/components/fmetadata";
 import NoFee from "@/components/nofee";
+import { DOWNLOAD_URL } from "@/config/links";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           <h3 className={`font-normal text-black md:text-3xl text-xl text-center dark:text-white/82`}>Your favorite collection. Apple Music ready.</h3>
           <div className="pt-5 pb-5 flex flex-row gap-3">
             <Button tinted={false} label="Learn more" link="/" />
-            <Button tinted={true} label="Download" link="https://github.com/kalis26/iTuneUp/releases/download/v1.2.5/iTuneUp-Setup.exe" />
+            <Button tinted={true} label="Download" link={DOWNLOAD_URL} />
           </div>
           <Image
             src="/images/iPhone.png" 

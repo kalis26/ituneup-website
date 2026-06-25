@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import ThemeToggle from "@/components/theme-toggle";
+import { DOWNLOAD_URL } from "@/config/links";
 
 type NavbtnProps = {
     tinted?: boolean;
@@ -134,7 +135,7 @@ export default function Navbar() {
                             </svg>
                         </button>
                     </div>
-                    <Navtbn internal={false} tinted={true} label="Download" link="https://github.com/kalis26/iTuneUp/releases/download/v1.2.5/iTuneUp-Setup.exe" />
+                    <Navtbn internal={false} tinted={true} label="Download" link={DOWNLOAD_URL} />
                 </div>
             </div>
             <div className={`fixed inset-0 z-[100] bg-white/50 backdrop-blur-3xl transition-opacity duration-300 dark:bg-black/50 ${showOverlay ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>

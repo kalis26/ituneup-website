@@ -45,7 +45,14 @@ export default function FeatureMetadata() {
                         height={786}
                         width={800}
                         alt="Apple Music animated artwork"
-                        className="w-auto h-auto flex-1 min-w-0"
+                        className="w-auto h-auto flex-1 min-w-0 rounded-2xl dark:hidden"
+                    />
+                    <Image 
+                        src="/images/iPhone.png"
+                        height={860}
+                        width={393}
+                        alt="Apple Music library on iPhone"
+                        className="hidden h-auto max-h-[620px] w-auto flex-1 rounded-2xl dark:block"
                     />
                 </div>
                 <div className="flex flex-col md:flex-row gap-10 items-center lg:max-w-2/3">
