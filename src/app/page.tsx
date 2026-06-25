@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-40">
-        <div className="pt-10 h-full flex flex-col gap-2 items-center justify-center bg-[#F5F5F7]">
-          <h1 className={`font-bold text-black md:text-6xl text-4xl text-center`}>iTuneUp</h1>
-          <h3 className={`font-normal text-black md:text-3xl text-xl text-center`}>Your favorite collection. Apple Music ready.</h3>
+        <div className="pt-10 h-full flex flex-col gap-2 items-center justify-center bg-[#F5F5F7] dark:bg-[#08080a]">
+          <h1 className={`font-bold text-black md:text-6xl text-4xl text-center dark:text-[#F5F5F7]`}>iTuneUp</h1>
+          <h3 className={`font-normal text-black md:text-3xl text-xl text-center dark:text-white/82`}>Your favorite collection. Apple Music ready.</h3>
           <div className="pt-5 pb-5 flex flex-row gap-3">
             <Button tinted={false} label="Learn more" link="/" />
             <Button tinted={true} label="Download" link="https://github.com/kalis26/iTuneUp/releases/download/v1.2.5/iTuneUp-Setup.exe" />
